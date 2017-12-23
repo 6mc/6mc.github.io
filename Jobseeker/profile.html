@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--Jquery link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Use downloaded version of Bootstrap -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+    /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+    body {
+        font-family: 'Open Sans', 'sans-serif';
+    }
+    .mega-dropdown {
+        position: static !important;
+    }
+    .mega-dropdown-menu {
+        padding: 20px 0px;
+        width: 100%;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    .mega-dropdown-menu > li > ul {
+        padding: 0;
+        margin: 0;
+    }
+    .mega-dropdown-menu > li > ul > li {
+        list-style: none;
+    }
+    .mega-dropdown-menu > li > ul > li > a {
+        display: block;
+        color: #222;
+        padding: 3px 5px;
+    }
+    .mega-dropdown-menu > li ul > li > a:hover,
+    .mega-dropdown-menu > li ul > li > a:focus {
+        text-decoration: none;
+    }
+    .mega-dropdown-menu .dropdown-header {
+        font-size: 18px;
+        color: #ff3546;
+        padding: 5px 60px 5px 5px;
+        line-height: 30px;
+    }
+
+    .carousel-control {
+        width: 30px;
+        height: 30px;
+        top: -35px;
+
+    }
+    .left.carousel-control {
+        right: 30px;
+        left: inherit;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right {
+        font-size: 12px;
+        background-color: #fff;
+        line-height: 30px;
+        text-shadow: none;
+        color: #333;
+        border: 1px solid #ddd;
+    }*/
+</style>
+<style>
+    .resume-row{
+        border: none;
+        border-top: 1px solid #e4e4e4;
+        margin: 3em 0;
+        width: 100%;
+    }
+    .profile img{
+        height: auto;
+        max-width: 100%;
+    }
+    .skills{
+        margin-bottom: 2em;
+    }
+    .skills h4{
+        font-family: Montserrat,Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .skills a{
+        margin-right: 2em;
+        margin-right: 10px;
+    }
+    .resume_links{
+        margin-bottom: 2em;
+    }
+    .resume_links h4{
+        font-family: Montserrat,Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 16px;
+    }
+    .resume_links a{
+        margin-right: 2em;
+        margin-right: 10px;
+    }
+</style>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">My Store</a>
+        </div>
+
+        <div class="collapse navbar-collapse js-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="resumes.html">Resumes</a></li>
+                <li><a href="jobs.html">Login</a></li>
+            </ul>
+        </div><!-- /.nav-collapse -->
+    </div>
+</nav>
+<div class="main-content">
+    <div class="container">
+        <div class="profile">
+            <div class="col-xs-12 col-md-3">
+                <img class="candidate_photo" src="http://www.coffeecreamthemes.com/themes/jobseek/v2/wp-content/uploads/2017/01/candidate06.jpg" alt="Photo">
+            </div>
+            <div class="col-xs-12 col-md-5">
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/resume-skill/dropbox/" rel="tag"><i class="glyphicon glyphicon-tag"></i>dropbox</a>
+                    <a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/resume-skill/engineer/" rel="tag"><i class="glyphicon glyphicon-tag"></i>engineer</a>
+                </div>
+                <div class="resume_links">
+                    <h4>Links</h4>
+                    <a rel="nofollow" href="http://linkedin.com"><i class="fa fa-linkedin"></i> LinkeIn</a>
+                    <a rel="nofollow" href="http://facebook.com"><i class="fa fa-facebook"></i> Facebook</a>
+                    <a rel="nofollow" href="http://twitter.com"><i class="fa fa-twitter"></i>  Twitter</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="social_media">
+                    <h3 class="sd-title">Share This</h3>
+                    <div class="sd-content">
+                        <ul>
+                            <li>
+                                <a><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul></div>
+                </div>
+
+            </div>
+        </div>
+        <hr class="resume-row">
+
+    </div>
+</div>
+<footer id="footer">
+    <div id="prefooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <h2 style="margin-left: 0 !important;">About Jobseek</h2>
+                    <div class="textwidget">Jobseek Wordpress Theme is a complete solution
+                        for recruiting agencies and human resources. It’s a perfect website
+                        to offer your clients career evolving, new projects for freelancers
+                        or just great chances of employment. Jobseek is loaded with options,
+                        both for recruiter and for candidates. Recruiters and companies can post,
+                        edit and manage job offers and company profiles and candidates can do the
+                        same things with their resumes.
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <h2>Candidate Tools</h2>
+                    <div class="menu-footer-candidate-container">
+                        <ul  class="footer_menu">
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <h2>Candidate Tools</h2>
+                    <div class="menu-footer-candidate-container">
+                        <ul class="footer_menu">
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="credits">
+        <div class="container" style="color: #888888; font-size: 16px;">
+            © 2017 mero.com tum haklari saklidir.
+        </div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function(){
+        $(".dropdown").hover(
+                function() {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+                    $(this).toggleClass('open');
+                },
+                function() {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+                    $(this).toggleClass('open');
+                }
+        );
+    });
+</script>
+</body>
+</html>

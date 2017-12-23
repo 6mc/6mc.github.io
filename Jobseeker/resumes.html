@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jobs</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--Jquery link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Use downloaded version of Bootstrap -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+    .pagination{
+        list-style: none;
+    }
+    .search-jobs{
+        background: #f8f8f8;
+        padding: 15px;
+        display: -webkit-box;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .search-jobs input{
+        background: #ffffff;
+        width: 100%;
+        border: 1px solid #e4e4e4;
+        border-radius: 3px;
+        color: #888888;
+        display: block;
+        font-family: "Roboto",Arial,sans-serif;
+        font-size: 1em;
+        font-weight: normal;
+        height: auto;
+        padding: 1em;
+        width: 100%;
+    }
+    .search-jobs select{
+        background: #ffffff;
+        width: 100%;
+        border: 1px solid #e4e4e4;
+        border-radius: 3px;
+        color: #888888;
+        display: block;
+        font-family: "Roboto",Arial,sans-serif;
+        font-size: 1em;
+        font-weight: normal;
+        height: auto;
+        padding: 1em;
+        width: 100%;
+    }
+</style>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">My Store</a>
+        </div>
+
+        <div class="collapse navbar-collapse js-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">My cart (0) items</a></li>
+            </ul>
+        </div><!-- /.nav-collapse -->
+    </div>
+</nav>
+<div class="main-content" style="margin-bottom: 200px">
+    <div class="container">
+        <div class="search-jobs">
+            <div class="col-md-4">
+                <input type="text" id="keywords" placeholder="Keywords">
+            </div>
+            <div class="col-md-4">
+                <select>
+                    <option value="" disabled >Kategoriyi Seciniz</option>
+                    <option>IT</option>
+                    <option>Management</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select>
+                    <option value="" disabled >Siralama Sekli</option>
+                    <option>Ada gore</option>
+                    <option>Eklenme Tarihine gore</option>
+                </select>
+            </div>
+
+        </div>
+        <ul class="job_listings">
+            <li class="job_listing">
+                <a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/job/specification-engineer/">
+                    <div class="image">
+                        <img class="company_logo" src="http://www.coffeecreamthemes.com/themes/jobseek/v2/wp-content/uploads/2016/08/Leviton-logo-360x128.png" alt="Leviton Manufacturing"> </div>
+                    <div class="description">
+                        <h3>Adi Soyadi( Ne is yaptigi)</h3>
+                        <ul>
+                            <li class="company"><i class="glyphicon glyphicon-briefcase"></i>Leviton Manufacturing</li>
+                            <li class="location"><i class="glyphicon glyphicon-map-marker"></i>Seattle, WA, United States</li>
+                            <li class="date"><i class="glyphicon glyphicon-calendar"></i><date>12 months ago</date></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="job_listing">
+                <a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/job/specification-engineer/">
+                    <div class="image">
+                        <img class="company_logo" src="http://www.coffeecreamthemes.com/themes/jobseek/v2/wp-content/uploads/2016/08/Leviton-logo-360x128.png" alt="Leviton Manufacturing"> </div>
+                    <div class="description">
+                        <h3>Specification Engineer</h3>
+                        <ul>
+                            <li class="company"><i class="glyphicon glyphicon-briefcase"></i>Leviton Manufacturing</li>
+                            <li class="location"><i class="glyphicon glyphicon-map-marker"></i>Seattle, WA, United States</li>
+                            <li class="date"><i class="glyphicon glyphicon-calendar"></i><date>12 months ago</date></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="job_listing">
+                <a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/job/specification-engineer/">
+                    <div class="image">
+                        <img class="company_logo" src="http://www.coffeecreamthemes.com/themes/jobseek/v2/wp-content/uploads/2016/08/Leviton-logo-360x128.png" alt="Leviton Manufacturing"> </div>
+                    <div class="description">
+                        <h3>Specification Engineer</h3>
+                        <ul>
+                            <li class="company"><i class="glyphicon glyphicon-briefcase"></i>Leviton Manufacturing</li>
+                            <li class="location"><i class="glyphicon glyphicon-map-marker"></i>Seattle, WA, United States</li>
+                            <li class="date"><i class="glyphicon glyphicon-calendar"></i><date>12 months ago</date></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="job_listing">
+                <a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/job/specification-engineer/">
+                    <div class="image">
+                        <img class="company_logo" src="http://www.coffeecreamthemes.com/themes/jobseek/v2/wp-content/uploads/2016/08/Leviton-logo-360x128.png" alt="Leviton Manufacturing"> </div>
+                    <div class="description">
+                        <h3>Specification Engineer</h3>
+                        <ul>
+                            <li class="company"><i class="glyphicon glyphicon-briefcase"></i>Leviton Manufacturing</li>
+                            <li class="location"><i class="glyphicon glyphicon-map-marker"></i>Seattle, WA, United States</li>
+                            <li class="date"><i class="glyphicon glyphicon-calendar"></i><date>12 months ago</date></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="job_listing">
+                <a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/job/specification-engineer/">
+                    <div class="image">
+                        <img class="company_logo" src="http://www.coffeecreamthemes.com/themes/jobseek/v2/wp-content/uploads/2016/08/Leviton-logo-360x128.png" alt="Leviton Manufacturing"> </div>
+                    <div class="description">
+                        <h3>Specification Engineer</h3>
+                        <ul>
+                            <li class="company"><i class="glyphicon glyphicon-briefcase"></i>Leviton Manufacturing</li>
+                            <li class="location"><i class="glyphicon glyphicon-map-marker"></i>Seattle, WA, United States</li>
+                            <li class="date"><i class="glyphicon glyphicon-calendar"></i><date>12 months ago</date></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul class="pagination">
+            <li><span class="current" data-page="1">1</span></li>
+            <li><a href="#" data-page="2">2</a></li>
+            <li><a href="#" data-page="3">3</a></li>
+            <li><a href="#" data-page="4">4</a></li>
+            <li><a href="#" data-page="5">5</a></li>
+            <li><a href="#" data-page="2">→</a></li>
+        </ul>
+    </div>
+</div>
+<footer id="footer">
+    <div id="prefooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <h2 style="margin-left: 0 !important;">About Jobseek</h2>
+                    <div class="textwidget">Jobseek Wordpress Theme is a complete solution
+                        for recruiting agencies and human resources. It’s a perfect website
+                        to offer your clients career evolving, new projects for freelancers
+                        or just great chances of employment. Jobseek is loaded with options,
+                        both for recruiter and for candidates. Recruiters and companies can post,
+                        edit and manage job offers and company profiles and candidates can do the
+                        same things with their resumes.
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <h2>Candidate Tools</h2>
+                    <div class="menu-footer-candidate-container">
+                        <ul  class="footer_menu">
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <h2>Candidate Tools</h2>
+                    <div class="menu-footer-candidate-container">
+                        <ul class="footer_menu">
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li>
+                            <li><a href="http://www.coffeecreamthemes.com/themes/jobseek/v2/submit-resume/">Add a Resume</a></li
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="credits">
+        <div class="container" style="color: #888888; font-size: 16px;">
+            © 2017 mero.com tum haklari saklidir.
+        </div>
+    </div>
+</footer>
+</body>
+</html>

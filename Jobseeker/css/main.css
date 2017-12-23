@@ -1,0 +1,334 @@
+/*Nav bar style*/
+.navbar{
+    min-height: 60px;
+    background-color: #3bb2d6;
+    border: none;
+    border-radius:0;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+.navbar-default{
+    background-image: none;
+    background-color: #3bb2d6;
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+.navbar-default .navbar-nav>li>a{
+    color: white;
+    height: 60px;
+    font-size: 14px;
+    line-height: 60px;
+    padding: 0 15px;
+    text-shadow: none;
+    text-transform: uppercase;
+    transition: none;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.navbar-default .navbar-brand{
+    color: white;
+    line-height: 30px;
+    text-shadow: none;
+}
+.navbar-default .navbar-brand:hover{
+    color: white;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+    background: rgba(0,0,0,0.1);
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background: rgba(0,0,0,0.1);
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color: white;
+    background: rgba(0,0,0,0.1);
+}
+.navbar-right .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+.navbar-nav>li>.dropdown-menu{
+    background:#3bb2d6 ;
+    color: white;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    text-decoration: none;
+    color: white;
+    background: rgba(0,0,0,0.2);
+}
+.dropdown-menu{
+    padding: 0;
+}
+.dropdown-menu>li>a{
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    background: rgba(0,0,0,0.1);
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    height: auto;
+    line-height: 1;
+    padding: 15px 15px 15px 30px;
+    position: relative;
+    line-height: 100%;
+    text-transform: none;
+    color: white;
+}
+/*Nav bar buttu search form bawtady */
+.search{
+    display: table;
+    height: 578px;
+    width: 100%;
+    padding: 0;
+    background-image: url("http://www.coffeecreamthemes.com/themes/jobseek/v2/wp-content/uploads/2015/05/main2.jpg");
+    background-size: 100% 100%;
+}
+.search h4{
+    color: #3bb2d6;
+    font-family: Montserrat,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.search h1{
+    font-family: Montserrat,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 3em;
+    line-height: 1em;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    margin-bottom: 0;
+}
+.search .container{
+    height: 578px;
+    display: table;
+}
+.search-content{
+    display: table-cell;
+    vertical-align: middle;
+}
+#search-form{
+    margin-top: 35px;
+}
+/**/
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+/*Ortodogu buttu*/
+.main-content{
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+#main-tab li{
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+    height: 63px;
+}
+#main-tab>li>a{
+    font-family: "Montserrat",Arial,sans-serif;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+    border-radius: 0;
+    height: 63px;
+    line-height: 45px;
+}
+#main-tab .active a{
+    color: black;
+    background-color: white;
+    border-bottom: solid 1px #3bb2d6;
+    border-radius: 0;
+    text-align: center;
+}
+#main-tab>li>a:hover{
+    text-decoration: none;
+    background-color: #eee;
+}
+/*resumes */
+.resumes{
+    list-style: none;
+    margin: 0 0 2rem;
+    padding: 0;
+}
+ul.resumes li {
+    border-bottom: 1px solid #e4e4e4;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding: 0;
+}
+ul.resumes li a {
+    color: #888888;
+    display: block;
+    min-height: 146px;
+    padding: 30px 110px 30px 0;
+    position: relative;
+}
+ul.resumes li a img {
+    border-radius: 3px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 80px;
+}
+ul.resumes li a .candidate-column h3 {
+    float: left;
+    font-family: "Roboto",Arial,sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 0.5em 0 0;
+    text-transform: none;
+}
+ul.resumes li a .candidate-column .candidate-title strong {
+    color: #000000;
+    font-weight: normal;
+}
+ul.resumes li a .candidate-location-column {
+    float: left;
+    margin-right: 2em;
+}
+ul.resumes li a .resume-posted-column date {
+    float: left;
+    margin-right: 2em;
+}
+ul.resumes li a:hover{
+    text-decoration: none;
+}
+/*Jobko ottu*/
+ul.job_listings {
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0;
+}
+ul.job_listings li {
+    border-bottom: 1px solid #e4e4e4;
+    display: table;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+ul.job_listings li a {
+    color: #888888;
+    display: block;
+    padding: 30px 100px 30px 0;
+    position: relative;
+}
+ul.job_listings li a .image {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+ul.job_listings li a .image img {
+    max-height: 70px;
+    max-width: 70px;
+}
+ul.job_listings li a .description h3 {
+    font-family: "Roboto",Arial,sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: none;
+    margin-left: 1.5em;
+    margin: 0 0 1em;
+}
+ul.job_listings li a .description ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.job_listings li a .description ul li {
+    border: 0;
+    display: inline-block;
+    margin-right: 1em;
+    width: auto;
+}
+ul.job_listings li a:hover{
+    text-decoration: none;
+}
+.glyphicon{
+    color: #3bb2d6;
+    margin-right: 5px;
+}
+/*Footer*/
+footer #prefooter {
+    background: #1a1a1a;
+    padding: 120px 0 90px;
+}
+footer #credits {
+    background: #000000;
+    padding: 30px 0;
+    text-align: center;
+}
+footer #prefooter h2 {
+    color: #ffffff;
+    font-family: Montserrat,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 15px;
+    margin-left: 12px;
+
+}
+#prefooter ul{
+    list-style: none;
+    padding-left: 0;
+}
+footer #prefooter ul li a {
+    color: #888888;
+    display: block;
+    padding: 0.25em 0.5em 0.25em 0.9em;
+    position: relative;
+    font-size: 16px;
+}
+footer #prefooter ul li a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.textwidget{
+    font-size: 16px;
+    color: #888888;
+    line-height: 1.75em;
+}
