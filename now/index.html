@@ -16,7 +16,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	</head>
 	<body>
-
+<script type="text/javascript">
+jQuery(function($) {
+    if (/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())) {
+        $('body').css('opacity', '1.0') 
+    }
+})
+</script>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
