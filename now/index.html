@@ -30,7 +30,7 @@ jQuery(function($) {
 					<header id="header">
 						<span class="avatar"><img src="https://avatars0.githubusercontent.com/u/9204365?v=3&s=460" alt="" /></span>
 						<h1> <strong>Mehmet Can</strong> <a href="http://templated.co"></a><br />is<br />
-						<strong>Sleeping</strong> Now.</h1><img src="http://www.musawa.ps/assets/images/location_icon.png" alt=""><p style="color:white">Denizli, Turkey</p>
+						<strong id="verb">Sleeping</strong> Now.</h1><img src="http://www.musawa.ps/assets/images/location_icon.png" alt=""><p style="color:white">Denizli, Turkey</p>
 						<ul class="icons">
 							<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
@@ -107,6 +107,85 @@ jQuery(function($) {
 			</div>
 
 		<!-- Scripts -->
+<script type="text/javascript">
+
+
+	var d = new Date();
+var n = d.getHours();
+
+var genres= ["Jamiroquai – Virtual Insanity","Nirvana - Smells Like Teen Spirit","Curtis Stigers & The Forest Rangers - John The Revelator","Volga Nehri","Dua Lipa - New Rules","Jennifer Lopez - Let's Get Loud","Ezhel - İyi Bil ",
+ "50 Cent - Window Shopper","Yavuz Akyazıcı Project - Seni Kendime Sakladım","Linkin Park – One Step Closer","LP - When We're High","We no speak americano - Original","Other","Demphra - Dimelo","Tame Impala - New Person, Same Old Mistakes",
+ "K.A.A.N. – Feels","Damian Jr. Gong Marley - Medication ft. Stephen Marley","Action Bronson - Easy Rider","Skrillex and Diplo - Where Are U Now with Justin Bieber","Dubioza kolektiv U.S.A.","Adam F - Circles","Athena - Arsız Gönül",
+ "Chris Yonge - TGIF","Mura Masa - Love$ick ft. A$AP Rocky","Mura Masa - What If I Go?","Jamiroquai – Virtual Insanity","Nirvana - Smells Like Teen Spirit","Curtis Stigers & The Forest Rangers - John The Revelator","Volga Nehri","Dua Lipa - New Rules","Jennifer Lopez - Let's Get Loud","Ezhel - İyi Bil ",
+ "50 Cent - Window Shopper","Yavuz Akyazıcı Project - Seni Kendime Sakladım","Linkin Park – One Step Closer","LP - When We're High","We no speak americano - Original","Other","Demphra - Dimelo","Tame Impala - New Person, Same Old Mistakes",
+ "K.A.A.N. – Feels","Damian Jr. Gong Marley - Medication ft. Stephen Marley","Action Bronson - Easy Rider","Skrillex and Diplo - Where Are U Now with Justin Bieber","Dubioza kolektiv U.S.A.","Adam F - Circles","Athena - Arsız Gönül",
+ "Chris Yonge - TGIF","Mura Masa - Love$ick ft. A$AP Rocky","Mura Masa - What If I Go?","Euro-Techno","Ambient",
+ "Hermitude x Flume - Hyperparadise (GANZ Flip)","Vocal","Jazz+Funk","Fusion","Flight Facilities - Crave you feat. Giselle","Rimsky Korsakov - Flight of The Bumblebee",
+ "Ennio Morricone - L'estasi dell'Oro","Ennio Morricone - L'estasi dell'Oro","Ennio Morricone - L'estasi dell'Oro","Ennio Morricone - L'estasi dell'Oro","Sound Clip","Ennio Morricone - L'estasi dell'Oro",
+ "Ennio Morricone - L'estasi dell'Oro","Ennio Morricone - L'estasi dell'Oro","Bass","Soul","Punk","Space","Meditative",
+ "Instrumental Pop","Instrumental Rock","Ethnic","Gothic",
+ "Darkwave","Techno-Industrial","Electronic","Pop-Folk",
+ "Eurodance","Dream","Southern Rock","Comedy","Cult","Gangsta",
+ "Top 40","Christian Rap","Pop/Funk","Jungle","Native American",
+ "Cabaret","New Wave","Psychadelic","Rave","Showtunes","Trailer",
+ "Lo-Fi","Tribal","Acid Punk","Acid Jazz","Polka","Retro",
+ "Musical","Rock & Roll","Hard Rock","Folk","Folk-Rock",
+ "National Folk","Swing","Fast Fusion","Bebob","Latin","Revival",
+ "Celtic","Bluegrass","Avantgarde","Gothic Rock","Progressive Rock",
+ "Psychedelic Rock","Symphonic Rock","Slow Rock","Big Band",
+ "Chorus","Easy Listening","Acoustic","Humour","Speech","Chanson",
+ "Opera","Chamber Music","Sonata","Symphony","Booty Bass","Primus",
+ "Porn Groove","Satire","Slow Jam","Club","Tango","Samba",
+ "Folklore","Ballad","Power Ballad","Rhythmic Soul","Freestyle",
+ "Duet","Punk Rock","Drum Solo","Acapella","Euro-House","Dance Hall"] ;
+
+
+var foods = ["aioli","almond","anchochili","anchovy","apple","artichoke","arugula","asparagus","avacado","babaganoush","kebab","baklava","banana","barbequesauce","basil","beet","biscuit","blackbean","blueberry","bluegill","bologna","broccoli","brownie","burrito","butter","buttermilk","cabbage","cannoli","caramel","cardamom","carrot","caper","cashew","cauliflower","cayenne","celery","cherry","chicken","chickpea","chive","chocolate","chorizo","chowmein","cilantro","coconut","cookie","coriander","corn","cornbread","corndog","cornflake","couscous","cranberry","croissant","crouton","cucumber","cumin","cupcake","curry","daikon","dragonfruit","duck","dumpling","durian","edamame","eggplant","eggroll","falafel","fritter","garlic","greenbean","guacamole","guava","gyro","hamburger","honey","hotdog","hummus","icecream","jicama","kale","kebab","ketchup","kidneybean","kielbasa","kiwi","kringle","latke","lemon","lentil","lutefisk","lychee","macadamianut","macandcheese","mango","marshmallow","matzoball","meatball","mint","muffin","murtabak","mussel","mushroom","mustard","noodle","oatmeal","olive","oliveoil","onion","orange","oregano","pancake","pancetta","papaya","parsley","parsnip","peach","peanutbutter","pear","pelmeni","pepper","peppermint","pepperoni","pesto","pheasant","pickle","pimento","pintobean","pistachio","pita","pizza","plum","popcorn","potato","primerib","pumpkin","quesadilla","quinoa","radish","raisin","ramen","raspberry","rice","ricotta","risotto","romaine","rosemary","roti","sage","salami","salmon","sandwich","sardine","sausage","scallion","seitan","sesame","scallop","scone","shawarma","shrimp","shortrib","smelt","snapper","sourcream","spaghetti","spinach","squash","squid","sriracha","starfruit","steak","stirfry","strawberry","swisschard","sushi","tabbouleh","taco","tahini","tamale","tapioca","tempeh","tenderloin","teriyaki","tilapia","thyme","toast","tofu","tomato","torta","tuna","turnip","vanilla","vinegar","waffle","walleye","walnut","watermelon","wonton","yogurt"];
+
+
+
+var m= "zucht";
+
+
+
+
+if (n<9) {m="Sleeping";}
+
+if (n=9) {m="Eating Breakfast";}
+
+if (n=10) {m="at Class";}
+
+if (n=11) {m="Studying";}
+
+if (n=12) {m="Eating Lunch";}
+
+if (n=13) {m="Waiting for Class to Start";}
+
+if (n=14) {m="Waiting for Class to End";}
+
+if (n=15) {m="Going Home";}
+
+if (n=16) {m="Watching Videos on Youtube";}
+
+if (n=17) {m="Listening Music: "+ genres[d.getMinutes()];}
+
+if (n=18) {m="Watching TV";}
+
+if (n=19) {m="Eating "+foods[d.getMinutes()]+" at Dinner";}
+
+if (n=20) {m="Coding";}
+
+if (n=21) {m="Debugging";}
+
+if (n=22) {m="at Shower";}
+
+if (n=23) {m="Reading Book: Mythology: Timeless Tales of Gods and Heroes ";}
+
+
+document.getElementById("verb").innerHTML = 	m;
+
+
+</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
