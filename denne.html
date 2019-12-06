@@ -1,0 +1,221 @@
+<!
+__author__ = 'ILHAMI'
+__creation_date__ = '20.09.2019' '14:47'
+>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Globus | TAKBUL</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="http://globussavunma.com/file/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="http://globussavunma.com/file/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="http://globussavunma.com/file/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="http://globussavunma.com/file/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="http://globussavunma.com/file/vendor/select2/select2.min.css">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="http://globussavunma.com/file/css/util.css">
+	<link rel="stylesheet" type="text/css" href="http://globussavunma.com/file/css/main.css">
+<!--===============================================================================================-->
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>if (window.module) module = window.module;</script>
+</head>
+
+<body>
+
+
+
+<div class="limiter">
+		<div class="container2-login100">
+			<div class="cont-login100">
+
+					<div class="grid-container">
+                        <div class="item1">Kimlik Tanıma Sistemi</div>
+						<div class="item2">
+                            <form action="http://127.0.0.1:5000/">
+                                <input type="image" src="http://globussavunma.com/file/menu.png" alt="" style="height: 60px;">
+                             </form><br>
+                             <form action="http://127.0.0.1:5000/plateReader">
+                                <input type="image" src="http://globussavunma.com/file/plaka.png" alt="" style="height: 150px;">
+                             </form><br>
+                             <form action="#">
+                                <input type="image" src="http://globussavunma.com/file/ehliyet.png" alt="" style="height: 150px;">
+                             </form><br>
+                             <form action="http://127.0.0.1:5000/idReader">
+                                <input type="image" src="http://globussavunma.com/file/kimlik.png" alt="" style="height: 150px;">
+                             </form><br>
+                            <form action="http://127.0.0.1:5000/speechRecognizer">
+                                <input type="image" src="http://globussavunma.com/file/ses.png" alt="" style="height: 60px;">
+                             </form>
+                        </div>
+						<div class="item3">
+              <div id="my_camera"></div>
+              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script>
+ <script language="JavaScript">
+    Webcam.set({
+      width: 320,
+      height: 240,
+      image_format: 'jpeg',
+      jpeg_quality: 90
+    });
+    Webcam.attach( '#my_camera' );
+  </script>
+  
+                              <img src="http://37.148.210.22:5000/video_feed2" style="width:450px;height:350px" style="text-align:center" />
+                            <img src="http://37.148.210.22:5000/video_feed" style="width:450px;height:350px" style="text-align:center" />
+                        </div>
+
+                        <div class="item5">
+
+                            <h2>Kimlik Bilgileri</h2>
+
+                            <div class="w3-card-4"  id ="putimgRed" style="text-align:center">
+                                <img src="static/close.png" alt="Alps" style="width:100px;height:100px;display:none" id ="putimgRed2">
+                                 <div class="w3-container w3-center" style="text-align:right">
+                                    <p id="printRed"></p>
+                                    </div>
+                            </div>
+
+                            <div class="w3-card-4"  id ="putimg">
+                                <img src="static/ok.png" alt="Alps" style="width:100px;height:100px;display:none" id ="putimg1">
+                                <div class="w3-container w3-center">
+                                     <p id="print22"></p>
+                                </div>
+                            </div>
+                       </div>
+
+          </div>
+      </div>
+</div>
+
+
+
+
+    <div class="row">
+      <script>
+    //    const electron = require('electron')
+
+var check = "hi";
+ var ajaxFUN = function () {
+   $.ajax({
+     url: 'http://37.148.210.22:5000/print2',
+     dataType: 'json',
+     success: function (data) {
+       console.log(data['description']);
+       $('#col-xs-4').html(data['description']);
+       if (data['description'] != null  && data['description']!="") {
+
+         if (data['color'] =="green") {
+           var readedTC = data['description']
+           $('#print22').css('color', 'green');
+           $('#print22').css("font-size", "25px");
+            $("#putimg").show();
+           $("#putimg1").show();
+
+           $("#putimgRed").hide();
+           $('#print22').text(readedTC);
+         }
+         else if (data['color'] =="red"){
+            var readedTC = data['description']
+           $('#printRed').css('color', 'red');
+           $('#printRed').css("font-size", "25px");
+           $("#putimgRed").show();
+           $("#putimgRed2").show();
+           $("#putimg").hide();
+           $('#printRed').text(readedTC);
+
+
+         }
+       }
+        check = data['description'];
+     }
+   });
+ }
+ setInterval(ajaxFUN,1000)
+</script>
+        <script>
+      //  const electron = require('electron')
+
+
+ var ajaxFUN = function () {
+
+   $.ajax({
+     url: 'http://37.148.210.22:5000/speech',
+     dataType: 'json',
+     success: function (data) {
+       console.log(data['vocieToPrint']);
+       console.log(data['color']);
+       //$('#col-xs-4').html(data['vocieToPrint']);
+       if (true) {
+           console.log("first ifffffff");
+
+         if (data['color'] =="green") {
+           var readedTC = data['vocieToPrint']
+           $('#print22').css('color', 'green');
+           $('#print22').css("font-size", "20px");
+            $("#putimg").show();
+           $("#putimg1").show();
+
+           $("#putimgRed").hide();
+           $('#print22').text(readedTC);
+         }
+         else if (data['color'] =="red"){
+             console.log("Girdi RED Neden Basmıyor ki");
+            var readedTC = data['vocieToPrint']
+           $('#printRed').css('color', 'red');
+           $('#printRed').css("font-size", "30px");
+           $("#putimgRed").show();
+           $("#putimgRed2").show();
+           $("#putimg").hide();
+           $('#printRed').text(readedTC);
+
+
+         }
+       }
+       console.log("ife girmiyor");
+        check = data['vocieToPrint'];
+     }
+   });
+ }
+</script>
+<!--===============================================================================================-->
+	<script src="http://globussavunma.com/file/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="http://globussavunma.com/file/vendor/bootstrap/js/popper.js"></script>
+	<script src="http://globussavunma.com/file/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="http://globussavunma.com/file/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="http://globussavunma.com/file/vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="http://globussavunma.com/file/js/main.js"></script>
+
+</div>
+</body>
+</html>
+
+
+
+
+
